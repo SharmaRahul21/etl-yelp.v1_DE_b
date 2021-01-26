@@ -6,9 +6,9 @@ This is an extract-transform-load application designed in a modularized and reus
 3. Calculate the mean reviews by zipcode for the Top 5 most business dense zipcodes
 4. Calculate the Top 10 most active reviewers
 
-### NOTE: As the size of data was too big, github threw error of large file uploads. So after cloning this repository. Copy [business_composition_final1.json, business_composition_final2.json, business_composition_final3.json, business_composition_final4.json, business_composition_final5.json, reviews1.csv, reviews2.csv, reviews3.csv, reviews4.csv, reviews5.csv, user.sqlite] to the paths: yelp_etl_pkg.data.Yelp_data_Set & docker_build_yelp_etl.yelp_etl_pkg.data.Yelp_data_Set paths. 
+##### NOTE 1: As the size of data was too big, github threw error of large file uploads. So after cloning this repository. Copy [business_composition_final1.json, business_composition_final2.json, business_composition_final3.json, business_composition_final4.json, business_composition_final5.json, reviews1.csv, reviews2.csv, reviews3.csv, reviews4.csv, reviews5.csv, user.sqlite] to the paths: yelp_etl_pkg.data.Yelp_data_Set & docker_build_yelp_etl.yelp_etl_pkg.data.Yelp_data_Set paths. 
 
-## NOTE 2: I have also uploaded the package with the data at S3 bucket where i am outputting the data. I have shared the S3 bucket details over email. 
+##### NOTE 2: I have also uploaded the package with the data at S3 bucket where i am outputting the data. I have shared the S3 bucket details over email. 
 
 # Overview of the Application: 
 The github link () includes a handful of folder and files. And this part of the document intents to describe their purpose. 
