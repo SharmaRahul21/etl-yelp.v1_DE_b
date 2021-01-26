@@ -1,0 +1,20 @@
+01/25/2021 11:18:33.615 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Capturing Yelp Dataset path from Config File
+01/25/2021 11:18:33.616 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Creating an instance of Xtract_data.extract_data and extracting data from CSV, JSON and SQLITE3
+01/25/2021 11:18:48.971 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Joining Datasets to create a Summarized View
+01/25/2021 11:18:52.863 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Summarized View, Q1 to S3
+01/25/2021 11:22:41.655 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q1 - Mean reviews by zipcode
+01/25/2021 11:22:42.638 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q2 Transformed View to S3
+01/25/2021 11:22:43.368 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q2 - Mean reviews by zipcode for top 5 business dense zips
+01/25/2021 11:22:45.071 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q3 Transformed View to S3
+01/25/2021 11:22:45.441 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q3 - Top 10 most active reviewers
+01/25/2021 11:22:46.273 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q4 Transformed View to S3
+01/25/2021 01:17:11.509 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Capturing Yelp Dataset path from Config File
+01/25/2021 01:17:11.511 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Creating an instance of Xtract_data.extract_data and extracting data from CSV, JSON and SQLITE3
+01/25/2021 01:17:22.828 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Joining Datasets to create a Summarized View
+01/25/2021 01:17:23.940 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Summarized View, Q1 to S3
+01/25/2021 01:21:16.307 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q1 - Mean reviews by zipcode
+01/25/2021 01:21:24.187 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q2 Transformed View to S3
+01/25/2021 01:21:26.969 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q2 - Mean reviews by zipcode for top 5 business dense zips
+01/25/2021 01:21:36.409 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q3 Transformed View to S3
+01/25/2021 01:21:36.804 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q3 - Top 10 most active reviewers
+01/25/2021 01:21:39.617 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q4 Transformed View to S3

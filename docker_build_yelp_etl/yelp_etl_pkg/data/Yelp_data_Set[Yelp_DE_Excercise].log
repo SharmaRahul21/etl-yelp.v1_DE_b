@@ -1,0 +1,24 @@
+01/25/2021 11:18:33.615 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Capturing Yelp Dataset path from Config File
+01/25/2021 11:18:33.616 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Creating an instance of Xtract_data.extract_data and extracting data from CSV, JSON and SQLITE3
+01/25/2021 11:18:48.971 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Joining Datasets to create a Summarized View
+01/25/2021 11:18:52.863 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Summarized View, Q1 to S3
+01/25/2021 11:22:41.655 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q1 - Mean reviews by zipcode
+01/25/2021 11:22:42.638 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q2 Transformed View to S3
+01/25/2021 11:22:43.368 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q2 - Mean reviews by zipcode for top 5 business dense zips
+01/25/2021 11:22:45.071 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q3 Transformed View to S3
+01/25/2021 11:22:45.441 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q3 - Top 10 most active reviewers
+01/25/2021 11:22:46.273 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q4 Transformed View to S3
+01/25/2021 02:51:23.818 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Capturing Yelp Dataset path from Config File
+01/25/2021 02:51:23.818 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Creating an instance of Xtract_data.extract_data and extracting data from CSV, JSON and SQLITE3
+01/25/2021 02:51:46.747 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Joining Datasets to create a Summarized View
+01/25/2021 02:51:47.849 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Summarized View, Q1 to S3
+01/25/2021 02:52:12.052 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Capturing Yelp Dataset path from Config File
+01/25/2021 02:52:12.052 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Creating an instance of Xtract_data.extract_data and extracting data from CSV, JSON and SQLITE3
+01/25/2021 02:52:23.687 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Joining Datasets to create a Summarized View
+01/25/2021 02:52:24.739 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Summarized View, Q1 to S3
+01/25/2021 02:56:02.095 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q1 - Mean reviews by zipcode
+01/25/2021 02:56:03.092 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q2 Transformed View to S3
+01/25/2021 02:56:07.314 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q2 - Mean reviews by zipcode for top 5 business dense zips
+01/25/2021 02:56:08.649 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q3 Transformed View to S3
+01/25/2021 02:56:08.884 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Transforming Dataset to calculate Q3 - Top 10 most active reviewers
+01/25/2021 02:56:09.823 [Yelp_DE_Excercise] [Yelp_DE_Excercise] INFO : Writing Q4 Transformed View to S3
