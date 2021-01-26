@@ -1,10 +1,10 @@
 # About Application:
 This is an extract-transform-load application designed in a modularized and reusable format, specifically developed to perform below transformation operations on the Yelp Dataset: 
 
-1. Joins the individual datasets into a base summarized dataset(JSON, CSV and SQLITE3 db)
-2. Calculate the mean reviews by business
-3. Calculate the mean reviews by zipcode for the Top 5 most business dense zipcodes
-4. Calculate the Top 10 most active reviewers
+1. Joins the individual datasets into a base summarized dataset(JSON, CSV and SQLITE3 db).
+2. Calculate the mean reviews by business.
+3. Calculate the mean reviews by zipcode for the Top 5 most business dense zipcodes.
+4. Calculate the Top 10 most active reviewers.
 
 ##### NOTE 1: As the size of data was too big, github threw error of large file uploads. So after cloning this repository, Kindly copy [business_composition_final1.json, business_composition_final2.json, business_composition_final3.json, business_composition_final4.json, business_composition_final5.json, reviews1.csv, reviews2.csv, reviews3.csv, reviews4.csv, reviews5.csv, user.sqlite] to the package paths: yelp_etl_pkg.data.Yelp_data_Set & docker_build_yelp_etl.yelp_etl_pkg.data.Yelp_data_Set paths. 
 
@@ -20,6 +20,18 @@ yelp_etl_pkg
 |-- README.rst
 |-- data
 |   |-- Yelp_data_Set
+|   |   |-- business_composition_final1.json
+|   |   |-- business_composition_final2.json
+|   |   |-- business_composition_final3.json
+|   |   |-- business_composition_final4.json
+|   |   |-- business_composition_final5.json
+|   |   |-- config.properties
+|   |   |-- reviews1.csv
+|   |   |-- reviews2.csv
+|   |   |-- reviews3.csv
+|   |   |-- reviews4.csv
+|   |   |-- reviews5.csv
+|   |   `-- user.sqlite
 |   `-- Yelp_data_Set[Yelp_DE_Excercise].log
 |-- dist
 |   |-- yelp_etl_pkg-0.1.0-py3-none-any.whl
@@ -69,9 +81,44 @@ In order to run the tests:
 
 
 # Deployment of the application
-In addition to above, i have created the dockerfile which containerizes the application. For running and interacting with the application please use the folder: "". 
+In addition to above, i have created the dockerfile which containerizes the application. For running and interacting with the application please use the folder: "docker_build_yelp_etl".
 
-1. Go to the folder -docker_build_yelp_etl. This folder contains the dockerfile and the etl application package. 
+docker_build_yelp_etl
+|-- Dockerfile
+`-- yelp_etl_pkg
+    |-- README.rst
+    |-- data
+    |   |-- Yelp_data_Set
+    |   |   |-- business_composition_final1.json
+    |   |   |-- business_composition_final2.json
+    |   |   |-- business_composition_final3.json
+    |   |   |-- business_composition_final4.json
+    |   |   |-- business_composition_final5.json
+    |   |   |-- config.properties
+    |   |   |-- reviews1.csv
+    |   |   |-- reviews2.csv
+    |   |   |-- reviews3.csv
+    |   |   |-- reviews4.csv
+    |   |   |-- reviews5.csv
+    |   |   `-- user.sqlite
+    |   |-- Yelp_data_Set[Yelp_DE_Excercise].log
+    |   `-- cli_dkr_output
+    |-- dist
+    |   |-- yelp_etl_pkg-0.1.0-py3-none-any.whl
+    |   `-- yelp_etl_pkg-0.1.0.tar.gz
+    |-- poetry.lock
+    |-- pyproject.toml
+    |-- tests
+    |   |-- __init__.py
+    |   `-- test_yelp_etl_pkg.py
+    `-- yelp_etl_pkg
+        |-- Xform_dataStructs.py
+        |-- Xtract_data.py
+        |-- __init__.py
+        |-- cli.py
+        `-- helper.py
+
+1. Go to the folder - docker_build_yelp_etl. This folder contains the dockerfile and the etl application package. 
 2. In order to execute it, build the docker image using - docker build -t <image_name eg- myimg> .
 3. Run the container using docker run <image_name eg- myimg>
 4. You will see the system output and logging statements showing the progress of the application execution. 
