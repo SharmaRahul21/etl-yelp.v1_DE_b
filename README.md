@@ -69,7 +69,7 @@ yelp_etl_pkg
 7. dist - This has the Wheel and tar file of the application which contains all the dependencies and the package modules itself. 
 
 
-# Running the application
+# Running the application:
 In order to run the application: 
 1. pip3 install yelp_etl_pkg-0.1.0-py3-none-any.whl
 2. And go to the folder - "yelp_etl_pkg" > 'yelp_etl_pkg' and Run 'python3 cli.py'
@@ -80,7 +80,7 @@ In order to run the tests:
 1. Go to the folder "yelp_etl_pkg" and run 'python3.8 -m poetry run pytest tests'
 
 
-# Deployment of the application
+# Deployment of the application:
 In addition to above, i have created the dockerfile which containerizes the application. For running and interacting with the application please use the folder: "docker_build_yelp_etl".
 
 docker_build_yelp_etl
