@@ -8,10 +8,10 @@ This is an extract-transform-load application designed in a modularized and reus
 
 ##### NOTE 1: As the size of data was too big, github threw error of large file uploads. So after cloning this repository, Kindly copy [business_composition_final1.json, business_composition_final2.json, business_composition_final3.json, business_composition_final4.json, business_composition_final5.json, reviews1.csv, reviews2.csv, reviews3.csv, reviews4.csv, reviews5.csv, user.sqlite] to the package paths: yelp_etl_pkg.data.Yelp_data_Set & docker_build_yelp_etl.yelp_etl_pkg.data.Yelp_data_Set paths. 
 
-##### NOTE 2: I have also uploaded the package with the data at S3 bucket where i am outputting the data. I have shared the S3 bucket details over email. 
+##### NOTE 2: I have also uploaded the package with the data at S3 bucket where the output will be pushed. I have shared the S3 bucket details over email. 
 
 # Overview of the Application: 
-The github link () includes a handful of folder and files. And this part of the document intents to describe their purpose. 
+The github includes a handful of folder and files. And this part of the document intends to describe their purpose. 
 
 1. "yelp_etl_pkg" is the main application package
 The packaging of the application is done using dependency manager - Poetry and below is the structure of the it.
@@ -40,7 +40,7 @@ yelp_etl_pkg
 2. Folder 'yelp_etl_pkg' inside the package "yelp_etl_pkg" contains the application code modules
 	a. Xtract_data.py - This module contains functions that help in extracting the data from sources(JSON, CSV, SQLITE3 placed in 'data.Yelp_data_Set' folder)
 
-	b. Xform_dataStructs.py - This code piece intents to transform the data to create the summarized dataset, and perform computations for Q2,Q3 and Q4 datasets. 
+	b. Xform_dataStructs.py - This code piece intents to transform the data to create the summarized dataset (Q1), and perform computations for Q2,Q3 and Q4 datasets. 
 
 	c. helper.py - This contains functions to implement the config parser (to avoid harcoding in the script and read the paths from config file in real time) and logger object (To enable logging across the application) 
 
@@ -69,7 +69,7 @@ In order to run the tests:
 
 
 # Deployment of the application
-In addition to above, i have created the dockerfile which containerizes the application. For runniing and interacting with the application please use the folder: "". 
+In addition to above, i have created the dockerfile which containerizes the application. For running and interacting with the application please use the folder: "". 
 
 1. Go to the folder -docker_build_yelp_etl. This folder contains the dockerfile and the etl application package. 
 2. In order to execute it, build the docker image using - docker build -t <image_name eg- myimg> .
